@@ -28,7 +28,7 @@ logit<-function(x){log(x/(1-x))}
 
 ### RIL data:
 
-dat2<-read.csv("2010RILsFlowerAsRow_NoParents.csv",stringsAsFactors =F)
+dat2<-read.csv("RILs_forVariance.csv",stringsAsFactors =F)
 
 # organize data:
 dat2$line<-as.factor(dat2$Line)
@@ -222,7 +222,7 @@ tmp3 %>% group_by() %>% summarise(func(flg))
 ## RIL parents analysis
 
 
-dat2<-read.csv("RILparentsForColin_StamenNum.csv",stringsAsFactors =F)
+dat2<-read.csv("RILparents_forVariance.csv",stringsAsFactors =F)
 
 # organize data:
 dat2$population<-as.factor(dat2$Pop)
